@@ -172,22 +172,25 @@ TCP 協議：三次握手的過程採用 TCP 協議，其可以保證信息傳�
 對於協商缓存，使用`Ctrl + F5`强制刷新可以使缓存無效，但是對於强缓存，在未過期時，必須更新資源路徑才能發起新的請求（更改了路徑相當於是另一個資源了，這也是前端工程化中常用到的技巧）
 
 **如何區別強緩存及協商緩存？**
+
 看緩存頭部。
 
 屬於強緩存控制的：
 
 >（http1.1）Cache-Control/Max-Age
->
+
 >（http1.0）Pragma/Expires
->
+
 > 注意：Max-Age不是一個頭部，它是Cache-Control頭部的值
 
 屬於協商緩存控制的：
 
->http1.1）If-None-Match/E-tag
->
+> (http1.1）If-None-Match/E-tag
+
 >（http1.0）If-Modified-Since/Last-Modified
->
+
+
+
 ## 參考資料
 
 * [从输入URL到页面加载的过程？如何由一道题完善自己的前端知识体系](https://zhuanlan.zhihu.com/p/34453198)
