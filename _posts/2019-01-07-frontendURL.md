@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "從輸入URL到頁面加載中間發生了什麼？"
-subtitle: "What happened from typing URL to page loading in the browser?"
+subtitle: "\"What happened from typing URL to page loading in the browser?\""
 author: "Han"
 header-img: "/img/post-bg-frontendURL.jpeg"
 header-mask: 0.3
