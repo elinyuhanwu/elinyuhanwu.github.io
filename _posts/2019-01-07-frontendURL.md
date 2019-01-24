@@ -3,8 +3,8 @@ layout: post
 title: "從輸入URL到頁面加載中間發生了什麼？"
 subtitle: "\"What happens when you type google.com into your browser's address box and press enter?\""
 author: "Han"
-header-img: "/img/post-bg-frontendURL.jpeg"
-header-mask: 0.3
+header-img: "/img/post-bg-google.jpeg"
+# header-mask: 0.3
 tags:
   - 前端
   - 生活
@@ -25,8 +25,8 @@ tags:
 **8. JS引擎解析過程** ( JS的解釋階段, 預處理階段, 執行階段生成執行上下文, VO, 作用域鍊, 回收機制等等 )
 9. 其它 ( 跨域, web安全, hybrid模式...... )
 
-##從瀏覽器接收url到開啟網絡請求線程
-####瀏覽器的多進程
+## 從瀏覽器接收url到開啟網絡請求線程
+#### 瀏覽器的多進程
 瀏覽器是多進程的，有一個主控進程，以及每個標籤頁面都會新開一個進程（某些情況下多個標籤頁面會合併進程）
 
 進程可能包括主動進程，插件進程，GPU，標籤頁（Rendering Engine）等等
@@ -37,7 +37,7 @@ tags:
 * 瀏覽器渲染進程(瀏覽器內核)：默認每個標籤頁面一個進程，多線程在其中，互不影響，控制頁面渲染，腳本執行，事件處理等（有時候會優化，如多個空白標籤頁會合併成一個進程）
 
 
-####多線程的瀏覽器內核 Rendering Engine
+#### 多線程的瀏覽器內核 Rendering Engine
 每一個標籤頁面可以看作是瀏覽器內核進程，是多線程的，它有幾大類子線程
 
 * GUI(圖形用戶介面)渲染線程
@@ -46,7 +46,7 @@ tags:
 * 定時器線程
 * 網絡請求線程: 異步http請求線程
 
-####解析URL (Parse URL)
+#### 解析URL (Parse URL)
 URL分為以下幾個部分：
 >`protocol` 協議頭，譬如http，ftp等
 `host` 主機域名或IP位置
@@ -55,11 +55,11 @@ URL分為以下幾個部分：
 `query` 即查詢參數
 `fragment` 即#後的hash值，一般用來定位到某個位置
 
-###開啟網絡線程到發出http請求
+### 開啟網絡線程到發出http請求
 這一階段過程如下，大致上包含了DNS Lookup，ARP Process，TCP/IP請求構建
-####Check HSTS list
+#### Check HSTS list
 瀏覽器檢驗是否為 HSTS(HTTP Strict Transport Security)，如果是瀏覽器發出`https`請求而非`http`。
-####DNS 查詢獲得 IP
+#### DNS 查詢獲得 IP
 1. 瀏覽器搜索自己的DNS緩存
 2. 搜索操作系統中的DNS緩存
 3. 搜索操作系統中的hosts文件
@@ -86,25 +86,25 @@ TCP 協議：三次握手的過程採用 TCP 協議，其可以保證信息傳�
 >3. 服務器向主機發送斷開通知
 >4. 主機接到斷開通知後斷開連接並反饋一個確認信號，服務器收到信號以後斷開連接
 
-####五層因特網協議
+#### 五層因特網協議
 >1. 應用層(dns,http) DNS解析成IP並發送http請求
 2. 傳輸層(tcp,udp) 建立tcp連接（三次握手）
 3. 網絡層(IP,ARP) IP尋址
 4. 數據鏈陸層(PPP) 封裝
 5. 物理層(利用物理介質傳輸比特流)物理傳輸（傳輸的時後通過雙膠線，電磁波等各種介質）
 
-###後台和前台的 http 交互
+### 後台和前台的 http 交互
 前後端交互時，http報文作為信息的載體，http是很重要的內容
 #### HTTP報文結構
 >通用頭部
 請求/響應頭部
 請求/響應體
-#####通用頭部
+##### 通用頭部
 >**Request Url:** 請求的web服務器地址
 **Request Method:** 請求方式（Get、POST、OPTIONS、PUT、HEAD、DELETE、CONNECT、TRACE）
 **Status Code:** 請求的返回狀態碼，如200代表成功
 **Remote Address:** 請求的遠程服務器地址（會轉為IP）
-#####狀態碼
+##### 狀態碼
 >200——表明該請求被成功完成，所請求的資源發送回客户端
 304——自從上次請求後，請求的網頁未修改過，請客户端使用本地缓存
 400——客户端請求有錯（譬如可以是安全模塊攔截）
