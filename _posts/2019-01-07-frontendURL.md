@@ -109,10 +109,13 @@ TCP 協議：三次握手的過程採用 TCP 協議，其可以保證信息傳�
 3. 主機接到同意連接的信號，再次發送確認信號，連接建立完成，數據傳輸開始
 
 #### 斷開連接--四次揮手
->1. 主機向服務器發送一個斷開連接的請求
->2. 服務器接到請求後，發送確認收到的信號
->3. 服務器向主機發送斷開通知
->4. 主機接到斷開通知後斷開連接並反饋一個確認信號，服務器收到信號以後斷開連接
+1. 主機向服務器發送一個斷開連接的請求
+
+2. 服務器接到請求後，發送確認收到的信號
+
+3. 服務器向主機發送斷開通知
+
+4. 主機接到斷開通知後斷開連接並反饋一個確認信號，服務器收到信號以後斷開連接
 
 #### 五層因特網協議
 >1. 應用層(dns,http) DNS解析成IP並發送http請求
@@ -178,16 +181,33 @@ TCP 協議：三次握手的過程採用 TCP 協議，其可以保證信息傳�
 屬於強緩存控制的：
 
 >（http1.1）Cache-Control/Max-Age
-
+>
 >（http1.0）Pragma/Expires
-
+>
 > 注意：Max-Age不是一個頭部，它是Cache-Control頭部的值
 
 屬於協商緩存控制的：
 
-> (http1.1）If-None-Match/E-tag
-
+> (http1.1）If-None-Match/E-tag  
+>
 >（http1.0）If-Modified-Since/Last-Modified
+
+###瀏覽器接收到 http 數據包後的解析流程
+1. 解析HTML，構建 DOM Tree
+
+2. 解析CSS，生成CSS Rule Tree
+
+3. 合併DOM Tree和CSS Rule Tree，生成 Render Tree
+
+4. 布局Render Tree（Layout/reflow），負責各元素尺寸、位置的計算
+
+5. 繪製Render Tree（paint），繪製頁面像素信息
+
+6. 瀏覽器會將各層的信息發送给GPU，GPU會將各層合成（composite），顯示在屏幕上
+
+渲染完畢後，JS引擎開始執行`load`事件
+
+![](img/in-post/dom.jpg)
 
 
 
