@@ -4,10 +4,10 @@ title: "從輸入URL到頁面加載中間發生了什麼？"
 subtitle: "\"What happens when you type google.com into your browser's address box and press enter?\""
 author: "Han"
 header-img: "img/post-bg-google.jpeg"
-# header-mask: 0.3
+header-mask: 0.3
 tags:
   - 前端
-  - 生活
+  - 筆記
 ---
 > 最近在準備面試新的前端工作，看到了這個題目，就當作Blog中第一篇前端文章，以作為自己基礎知識梳理習慣的開始
 
