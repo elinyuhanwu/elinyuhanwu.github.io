@@ -1,8 +1,8 @@
 ---
 layout:     post
-title:      "跨瀏覽器測試"
+title:      "Cross Browser Testing"
 subtitle:   " \"Cross browser testing\""
-date:       2019-01-11 12:00:00
+date:       2019-01-15 12:00:00
 author:     "Han"
 header-img: "img/post-bg-browser.jpeg"
 catalog: true
@@ -11,6 +11,8 @@ tags:
     - Web
     - 前端
 ---
+
+
 
 ## Work Flow for Cross Browser Testing
 > Initial planning > Development > Testing/discovery > Fixes/iteration 
@@ -54,6 +56,9 @@ This is especially prevalent if you are using very new technologies in your site
 
 
 
+
+
 ## 參考資料
 [MDN web Docs](https://developer.mozilla.org/zh-TW/docs/Learn/Tools_and_testing/Cross_browser_testing)
+
 [caniuse](https://caniuse.com)
