@@ -1,7 +1,7 @@
 ---
 layout:     post
 title:      "Cross Browser Testing"
-subtitle:   " \"Cross browser testing\""
+subtitle:   " \"testing web projects across different browsers\""
 date:       2019-01-15 12:00:00
 author:     "Han"
 header-img: "img/post-bg-browser.jpeg"
