@@ -9,9 +9,9 @@ Hey，我是Han，我來自台灣，現在在上海，初級前端，以前的�
 
 **Weekly Tech:** MongoDB, Express, Vue, Node
 
-**Monthly Tech:** Jekyll, React, D3
+**Monthly Tech:** Jekyll, React
 
-**Currently Learning:** MySQL, Python, Headless Chrome, Go, PHP
+**Currently Learning:** D3, MySQL, Python, Headless Chrome, Go, PHP
 
 
 **一些作品：**

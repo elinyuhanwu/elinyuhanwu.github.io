@@ -45,10 +45,38 @@ You can also go further than this, if wished. There are commercial tools availab
 
 This is especially prevalent if you are using very new technologies in your site, and you want to test against the latest implementations, or if you are coming across a bug in the latest release version of a browser, and you want to see if the browser's developers have fixed the bug in a newer version.
 
+## Defensive programming
+A common approach is to have multiple grades of support level, first support chart for example: 
+1. A grade: Common/modern browsers — Known to be capable. Test thoroughly and provide full support.
 
+2. B grade: Older/less capable browsers — known not to be capable. Test, and provide a more basic experience that gives full access to core information and services.
 
+3. C grade: Rare/unknown browsers — don't test, but assume they are capable. Serve the full site, which should work, at least with the fallbacks provided by our defensive coding.
 
+In China final support chart will be like: 
 
+1. A grade: Chrome and Firefox for Windows/Mac, Safari for Mac, Edge and IE for Windows (last two versions of each), iOS Safari for iPhone/iPad, Android stock browser (last two versions) on phone/tablet, Chrome and Firefox for Android (last two versions) on phone tablet. Accessibility passing common tests.
+
+2. B grade: IE 8 and 9 for Windows, Opera Mini.
+
+3. C grade: Opera, other niche modern browsers.
+
+## Physical Devices
+* A Mac, with the browsers installed that you need to test — this can include Firefox, Chrome, Opera, and Safari.
+
+* A Windows PC, with the browsers installed that you need to test — this can include Edge (or IE), Chrome, Firefox, and Opera.
+
+* A higher spec Android phone and tablet with browser installed that you need to test — this can include Chrome, Firefox, and Opera Mini for Android, as well as the original Android stock browser.
+
+* A higher spec iOS phone and tablet with the browsers installed that you need to test — this can include iOS Safari, and Chrome, Firefox, and Opera Mini for iOS.
+
+## HTML and CSS
+**HTML**
+A good strategy is to validate your code regularly. One service that can do this is the [W3C Markup Validation Service](https://validator.w3.org/), which allows you to point to your code, and returns a list of errors.
+**CSS**
+1. Linters: linter plugins => [atom](https://atom.io/)
+
+2. Browser Developer Tools
 
 
 
