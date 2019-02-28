@@ -1,7 +1,7 @@
 ---
 layout:     post
 title:      "微信小程序"
-subtitle:   "Take some notes from my practice of wechat mini-program"
+subtitle:   "\"Some notes from my practice of wechat mini-program\""
 date:       2019-02-26 12:00:00
 author:     "Han"
 header-img: "img/post-bg-miniprogram.jpeg"
@@ -29,7 +29,12 @@ tags:
 
 運行環境不同，無法使用window對象和document對象
 
-## 小程序基本架構
-View 視圖層：渲染頁面結構
+## 小程序基本架構：MINA框架
+View 視圖層：渲染頁面結構。WXML、WXSS
 
 App Service 邏輯層：邏輯處理、數據請求、接口調用
+
+## 開發人員看小程序
+**頁面管理：** 由框架管理整個小程序的頁面路由，讓頁面能無縫切換，並給頁面完整的生命週期，開發人員只需要專注於將頁面的數據、方法、生命週期函數註冊進框架中，其他複雜操作會由框架完成。
+
+**wechat提供的豐富API：** 框架提供了豐富的原生API，可以方便的調用微信提供的功能，例如：獲取用戶信息、本地存儲、支付功能等等。
