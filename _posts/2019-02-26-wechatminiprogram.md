@@ -43,13 +43,7 @@ App Service 邏輯層：邏輯處理、數據請求、接口調用
 
 **app.json：** 對小程序進行全局配置，決定頁面路徑，窗口表現，設置網絡超時時間，設置多tab......。
 
-|屬性 | 類型 | 必填 | 描述 |
-|--- | --- | --- | --- | 
-|pages|String Array| 是| 設置頁面路徑|
-|window| Object| 否 | 設置默認頁面的窗口表現|
-|tabBar|Object|否|設置底部tab的表現|
-|networkTimeout|Object|否|設置網絡超時時間|
-|debug|Boolean|否|設置是否開啟debug模式|
+
 
 
 
