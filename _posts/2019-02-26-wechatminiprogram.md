@@ -43,6 +43,32 @@ App Service 邏輯層：邏輯處理、數據請求、接口調用
 
 **app.json：** 對小程序進行全局配置，決定頁面路徑，窗口表現，設置網絡超時時間，設置多tab......。
 
+```javascript
+{
+  "pages": [
+    "pages/index/index",
+    "pages/logs/index"
+  ],  
+"window": {
+    "navigationBarTitleText": "Demo"
+  },
+  "tabBar": {
+    "list": [{
+      "pagePath": "pages/index/index",
+      "text": "首页"
+    }, {
+      "pagePath": "pages/logs/logs",
+      "text": "日志"
+    }]
+  },
+  "networkTimeout": {
+    "request": 10000,
+    "downloadFile": 10000
+  },
+  "debug": true
+}
+```
+
 |屬性           | 類型       | 必填 | 描述 |
 |---           | ---        | --- | --- | 
 |pages         |String Array| 是   | 設置頁面路徑|
