@@ -9,15 +9,13 @@ catalog: true
 tags:
     - Learning
 ---
-> Finally got the chance to organize something after 8 months. There are projects through projects I've been involved. Sometimes need to work overtime a bit, sometimes dedicate myself into learning. Anyway, at the moment, I can say myself as a frontend developer who know how to build the whole project by Vue and React.
-
-I dived into learning SVG animation recently. This article is just for myself as a learning note. And hope it can help someone who's learning as well.
+> Finally got the chance to organize something after 8 months. There are projects through projects I've been involved. Sometimes need to work overtime a bit, sometimes dedicate myself into learning. I dived into learning SVG animation recently. This article is just for myself as a learning note. And hope it can help someone who's learning as well.
 
 Speaking about SVG animation, we'll directly think to `SMIL`. The whole word is `Synchronized Multimedia Integration Language`.
 There's five main attributes we can use in `SMIL`.
 
 ***SVG Animation***
-・<set>: 
+・<set>
 沒有動畫效果，不是連續的動畫但可以實現基本的延遲功能。=>可以在特定時間後修改某一個attribute(也可以是CSS attribute)。
 範例：
 	<set attributeName="x" attributeType="XML" to="60" begin="3s" />
@@ -47,3 +45,7 @@ There's five main attributes we can use in `SMIL`.
 		<path d="M10,80 q100,120 120,20 q140,-50 160,0" stroke="#cd0000" stroke-width="2" fill="none" />
 	</svg>
 ```
+
+以上我自己最常使用到的是animate，使用<<animate>>時在begin的attribute放入click，可以在不用到js的情況下操縱頁面的點擊事件，能夠利用<<g>>或是<id>來控制各個元素是否要受到點擊事件的影響。
+
+其餘有趣的內容會找時間再整理codepen分享。
