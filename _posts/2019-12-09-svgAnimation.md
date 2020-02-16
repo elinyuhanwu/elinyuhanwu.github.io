@@ -46,6 +46,10 @@ There's five main attributes we can use in `SMIL`.
 	</svg>
 ```
 
-以上我自己最常使用到的是animate，使用<<animate>>時在begin的attribute放入click，可以在不用到js的情況下操縱頁面的點擊事件，能夠利用<<g>>或是<id>來控制各個元素是否要受到點擊事件的影響。
+以上我比較常使用到的是animate，使用<<animate>>時在begin的attribute放入click，可以在不用到js的情況下操縱頁面的點擊事件，能夠利用<<g>>或是<id>來控制各個元素是否要受到點擊事件的影響。
 
 其餘有趣的內容會找時間再整理codepen分享。
+
+## 參考資料
+
+* [超级强大的SVG SMIL animation动画详解](https://www.zhangxinxu.com/wordpress/2014/08/so-powerful-svg-smil-animation/comment-page-2/)
