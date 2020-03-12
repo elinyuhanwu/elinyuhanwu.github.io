@@ -6,7 +6,7 @@ email: yuhanwu0508@qq.com
 description: "關於程序與設計 | Han Wu，Web & Mobile Lover，Software Engineer，Front End Developer"
 keyword: "Han, Han Wu, Front End, 小程序, 博客, 个人网站, 互联网, Web, JavaScript, 前端, 设计, Han的博客, Han的網誌"
 url: "https://elinyuhanwu.github.io"              # your host, for absolute URL
-baseurl: "/"
+baseurl: "https://elinyuhanwu.github.io"
 # for example, '/blog' if your blog hosted on 'host/blog'
 
 # Publish posts or collection documents with a future date.
@@ -16,7 +16,7 @@ future: true
 RSS: false
 # weibo_username:     
 # zhihu_username:     
-github_username:    elinyuhanwu
+github_username: elinyuhanwu
 # twitter_username:   
 #facebook_username:  huxpro
 #linkedin_username:  firstname-lastname-idxxxx
